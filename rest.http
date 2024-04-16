@@ -1,0 +1,29 @@
+GET http://localhost:3000/
+
+###
+POST http://localhost:3000/user/register
+Content-Type: application/json
+
+{
+      "username": "abc1234@gmail.com",
+      "password": "abc123"
+}
+
+###
+POST http://localhost:3000/user/refresh-token
+
+###
+POST http://localhost:3000/user/login
+Content-Type: application/json
+
+{
+      "username": "abc1234@gmail.com",
+      "password": "abc123"
+}
+
+###
+POST http://localhost:3000/user/logout
+
+###
+GET http://localhost:3000/user/getlists
+Authorization: Bearer
